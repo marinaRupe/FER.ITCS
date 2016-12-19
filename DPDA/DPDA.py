@@ -51,7 +51,6 @@ def check(stack, current_state, output, current_stack_symbol, input_symbol, fail
                     
 
 #INPUT: DEFINITION OF DPA
-
 input_lines = list()
 for line in sys.stdin.readlines():
 	line = line.strip() 
@@ -84,7 +83,6 @@ for t in transition_functions:
     value = t_list[1]
     transitions[key] = value
     
-
 for input in input_array:
     current_state = initial_state
     next_stack_symbol = initial_stack_symbol
@@ -92,13 +90,9 @@ for input in input_array:
     stack += initial_stack_symbol
     output = ''
     failed = False
-    
     output+=current_state + '#' + stack + '|'
     
     for input_symbol in input:
-        
-        #print output
-        #print input_symbol
         
         if len(stack) != 0 :
             current_stack_symbol = stack[0]      #take symbol from the stack
@@ -156,11 +150,8 @@ for input in input_array:
         
         while (len(stack) != 0 and not (current_state in final_states)):
             failed = False
-        
             current_stack_symbol = stack[0]  #take symbol from the stack
             stack = stack[1:]
-
-            
             key = current_state + ',' + '$' + ',' + current_stack_symbol
             
             if key in transitions:
