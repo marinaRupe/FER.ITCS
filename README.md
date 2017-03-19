@@ -1,5 +1,5 @@
 # FER.ITCS
-Laboratory exercises for course Introduction to Theoretical Computer Science at FER, University of Zagreb (2015/2016).
+Laboratory exercises for the Introduction to Theoretical Computer Science course at FER, University of Zagreb (2015/2016).
 
 Link to a course site: http://www.fer.unizg.hr/en/course/ittcs
 
